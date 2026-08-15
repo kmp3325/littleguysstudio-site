@@ -9,14 +9,20 @@ and the OAuth consent screen point at, live separately at `pkhomedex.com` (see
 `~/personal/pkhomedex-site`).
 
 ```
-index.html      the whole site
-assets/         style.css, pkhomedex-icon.png
+public/                 everything that gets deployed, and nothing else
+  index.html            the whole site
+  assets/               style.css, pkhomedex-icon.png
+README.md               internal; deliberately outside public/
 ```
+
+**Keep notes out of `public/`.** Cloudflare publishes that directory verbatim,
+so anything inside it is fetchable by URL.
 
 ## Deploying
 
-Cloudflare Pages, connected to this private repo. Build command: none. Build
-output directory: `/`. Every push to `main` deploys.
+Cloudflare Pages, connected to this private repo. Framework preset: none.
+Build command: **empty**. Build output directory: **`public`**. Every push to
+`main` deploys.
 
 Custom domain `littleguysstudio.com` is added in the Pages project under Custom
 domains. Cloudflare manages the DNS, so it creates the records itself.
