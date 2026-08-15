@@ -10,7 +10,7 @@ and the OAuth consent screen point at, live separately at `pkhomedex.com` (see
 
 ```
 index.html      the whole site
-assets/         style.css, site.js, pkhomedex-icon.png
+assets/         style.css, pkhomedex-icon.png
 ```
 
 ## Deploying
