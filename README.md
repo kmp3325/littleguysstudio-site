@@ -5,13 +5,14 @@ Plain HTML and CSS, no build step.
 
 This is the site given to Google Play as the **organization's website** for
 developer account verification. The app's own site, and the privacy policy Play
-and the OAuth consent screen point at, live separately at `pkhomedex.com` (see
-`~/personal/pkhomedex-site`).
+and the OAuth consent screen point at, live separately at `everydex.app` (see
+`~/personal/everydex-site`). The app was PKHomeDex until Play suspended
+that name in November 2026.
 
 ```
 public/                 everything that gets deployed, and nothing else
   index.html            the whole site
-  assets/               style.css, pkhomedex-icon.png
+  assets/               style.css, everydex-icon.png
 README.md               internal; deliberately outside public/
 ```
 
